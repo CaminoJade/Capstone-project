@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+        }
+        .row{
+            padding: 50px;
+        }
+        .col1{
+                width: 25%;
+                padding: 10px 10px 20px 10px;
+                border: 2px solid blue;
+                background-color: aqua;
+                box-shadow: 10px 10px 5px gray;
+                float: left;
+                -ms-transform: rotate(7deg);
+                -webkit-transform: rotate(7deg);
+                transform: rotate(7deg);
+        }
+
+
+        .col1 span{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col1:hover{
+            transform: rotate(0deg);
+        }
+
+        .col2{
+                width: 25%;
+                padding: 10px 10px 20px 10px;
+                border: 2px solid mediumslateblue;
+                background-color: mediumaquamarine;
+                box-shadow: 10px 10px 5px gray;
+                float: left;
+                -ms-transform: rotate(-8deg);
+                -webkit-transform: rotate(-8deg);
+                transform: rotate(-8deg);
+        }
+
+        .col2 span{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col2:hover{
+            transform: rotate(0deg);
+
+        }
+
+        .row:after{
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px){
+            .col1{
+                width: 100%;
+            }
+            .col2{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+
+         <div class="col1">
+
+            <img src="img/Adventure.jpg" width="100%">
+            <span>Adventure Time </span>
+            <p class="desc1"> </p>Adventure Time was a ratings success for Cartoon Network, with some of its episodes 
+                attractinover three million viewers, and despite being aimed primarily at children, the show has developed 
+                a following amongteenagers and adults. Adventure Time has received universal acclaim from critics, with much
+                praise geared towards its' originality and worldbuilding.</p>
+
+
+
+
+         </div>
+
+          <div class="col2">
+
+            <img src="img/stitch2.jpg" width="100%">
+            <span>Stitch </span>
+            <p class="desc2"> </p>Stitch, also known as Experiment 626 (pronounced "six two six"), is a fictional character in 
+                Disney's Lilo & Stitch franchise. An illegally-made, genetically engineered, extraterrestrial life-form resembling
+                a blue koala, he is one of the franchise's two title characters, alongside his human adopter and best friend Lilo 
+                Pelekai, and its most prominent protagonist. </p>
+
+
+
+
+         </div>
+
+         <!---->
+         <div class="col1">
+
+            <img src="img/p&f.png" width="100%">
+            <span>Phineas and Ferb </span>
+            <p class="desc1"> </p>Phineas and Ferb is an American animated musical-comedy television series created by Dan 
+                Povenmire and Jeff "Swampy" Marsh for Disney Channel and Disney XD. Produced by Disney Television Animation, the 
+                series was originally broadcast as a one-episode preview on August 17, 2007. </p>
+
+
+
+
+         </div>
+
+          <div class="col2">
+
+            <img src="img/spongebob.png" width="100%">
+            <span>Spongebob </span>
+            <p class="desc2"> </p>SpongeBob SquarePants (or simply SpongeBob) is an American animated comedy television series created 
+                by marine science educator and animator Stephen Hillenburg for Nickelodeon. It chronicles the adventures of the title 
+                character and his aquatic friends in the fictional underwater city of Bikini Bottom.</p>
+
+
+
+
+         </div>
+
+
+
+    </div>
+
+
+
+    
+</body>
+</html>
